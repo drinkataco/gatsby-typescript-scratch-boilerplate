@@ -1,13 +1,13 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "gatsby-advanced-scratch-boilerplate",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A more advanced opinionated bare-bones typescript starter for Gatsby",
   "version": "0.1.0",
   "license": "0BSD",
+  "author": "J J Walwyn <me@joshwalwyn.com>",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -15,17 +15,27 @@
   },
   "dependencies": {
     "gatsby": "^3.1.2",
+    "gatsby-plugin-react-helmet": "^4.2.0",
+    "gatsby-plugin-typescript": "^3.2.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "@types/node": "^14.14.37",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-helmet": "^6.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "2.2.1",
+    "typescript": "^4.2.3"
   }
 }
