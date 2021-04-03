@@ -10,6 +10,7 @@
     "airbnb",
     "plugin:import/typescript"
   ],
+  "ignorePatterns": ["node_modules", "public", ".cache"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
