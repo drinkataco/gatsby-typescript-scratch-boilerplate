@@ -1,5 +1,6 @@
 import * as React from 'react';
+import IndexLayout from '../layout'
 
 export default function Home2Home(): React.ReactNode {
-  return <div>Home2Homebbbb</div>;
+  return <IndexLayout>Home2Homebbbb</IndexLayout>;
 }
