@@ -25,8 +25,6 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
   data,
 }: PageTemplateProps) => (
   <IndexLayout>
-    <h1>{data.markdownRemark.frontmatter.title}</h1>
-    <h2>{data.markdownRemark.frontmatter.date}</h2>
     {/* eslint-disable-next-line react/no-danger */}
     <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
   </IndexLayout>
