@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'gatsby-advanced-scratch-boilerplate',
+    title: 'gatsby-typescript-scratch-boilerplate',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

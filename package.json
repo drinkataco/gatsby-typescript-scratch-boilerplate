@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-advanced-scratch-boilerplate",
+  "name": "gatsby-typescript-scratch-boilerplate",
   "private": true,
   "description": "A more advanced opinionated bare-bones typescript starter for Gatsby",
   "version": "0.1.0",
@@ -40,5 +40,9 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "2.2.1",
     "typescript": "^4.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drinkataco/gatsby-typescript-scratch-boilerplate.git"
   }
 }
