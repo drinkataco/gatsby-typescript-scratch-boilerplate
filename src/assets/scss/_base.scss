@@ -1,0 +1,10 @@
+/**
+ * BASE
+ */
+@import 'normalize-scss';
+@include normalize();
+
+html {
+  color: $typographic-base-font-color;
+  font-family: $typographic-font-family;
+}

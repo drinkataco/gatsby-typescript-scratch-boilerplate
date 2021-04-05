@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
 
-import IndexLayout from '../layout';
+import IndexLayout from '../components/Layout';
 
 interface PageTemplateProps {
   data: {

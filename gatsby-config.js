@@ -5,6 +5,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
+    'gatsby-transformer-remark',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -12,6 +13,13 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        /* eslint-disable global-require */
+        implementation: require('sass'),
+        useResolveUrlLoader: true,
+      },
+    },
   ],
 };

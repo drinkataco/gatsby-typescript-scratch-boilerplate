@@ -2,6 +2,8 @@ import * as React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
+import './styles.scss';
+
 interface StaticQueryProps {
   site: {
     siteMetadata: {
@@ -28,21 +30,14 @@ const IndexLayout: React.FC<LayoutProps> = (props: LayoutProps) => (
       }
     `}
     render={(data: StaticQueryProps) => (
-      <html lang="en">
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            {
-              name: 'description',
-              content: data.site.siteMetadata.description,
-            },
-          ]}
-        />
-        <body>
-          <h1>Test</h1>
-          {props.children}
-        </body>
-      </html>
+      <div className="layout">
+        <Helmet>
+          <html lang="en" />
+          <title>{data.site.siteMetadata.title}</title>
+          <meta name="description" content={data.site.siteMetadata.description} />
+        </Helmet>
+        {props.children}
+      </div>
     )}
   />
 );
