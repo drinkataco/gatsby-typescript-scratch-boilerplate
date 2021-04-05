@@ -1,4 +1,4 @@
-name: Lint
+name: Lint JS
 
 on:
   pull_request:
@@ -15,4 +15,4 @@ jobs:
         with:
           node-version: '14'
       - run: npm ci
-      - run: npm run lint
+      - run: npm run lint:js
