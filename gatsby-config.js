@@ -3,6 +3,7 @@ module.exports = {
     title: 'gatsby-typescript-scratch-boilerplate',
   },
   plugins: [
+    'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
     'gatsby-transformer-remark',
