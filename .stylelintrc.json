@@ -1,0 +1,14 @@
+{
+  "extends": "stylelint-config-recommended-scss",
+  "rules": {
+    "declaration-block-trailing-semicolon": "always",
+    "font-family-name-quotes": "always-where-required",
+    "function-url-no-scheme-relative": true,
+    "string-quotes": "single"
+  },
+  "ignoreFiles": [
+    "node_modules/*",
+    "src/assets/**"
+  ],
+  "defaultSeverity": "error"
+}
