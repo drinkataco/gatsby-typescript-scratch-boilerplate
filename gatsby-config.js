@@ -18,8 +18,8 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 960,
-              withWebp: true
-            }
+              withWebp: true,
+            },
           },
           {
             resolve: 'gatsby-remark-external-links',
@@ -34,8 +34,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'assets',
+        path: `${__dirname}/static`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'markdown-pages',
-        path: `${__dirname}/src/content`,
+        path: `${__dirname}/content`,
       },
     },
     {
