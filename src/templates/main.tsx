@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
 
-import IndexLayout from '../components/Layout';
+import Layout from '../components/Layout';
 
 interface PageTemplateProps {
   data: {
@@ -24,10 +24,10 @@ interface PageTemplateProps {
 const PageTemplate: React.FC<PageTemplateProps> = ({
   data,
 }: PageTemplateProps) => (
-  <IndexLayout>
+  <Layout>
     {/* eslint-disable-next-line react/no-danger */}
     <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-  </IndexLayout>
+  </Layout>
 );
 
 export default PageTemplate;
