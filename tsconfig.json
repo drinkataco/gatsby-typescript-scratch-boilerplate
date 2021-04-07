@@ -13,7 +13,7 @@
     "moduleResolution": "node",
     "skipLibCheck": true,
     "noImplicitAny": true,
-    "types": ["react"]
+    "types": ["react", "jest", "react-test-renderer"]
   },
   "exclude": ["node_modules", "public", ".cache"]
 }
