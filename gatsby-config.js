@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'gatsby-typescript-scratch-boilerplate',
-    description: 'A more opinionated starter for gatsby, whilst trying to keep the contents and dependencies still somewhat lightweight.'
+    description:
+      'A more opinionated starter for gatsby, whilst trying to keep the contents and dependencies still somewhat lightweight.',
   },
   plugins: [
     'gatsby-plugin-catch-links',

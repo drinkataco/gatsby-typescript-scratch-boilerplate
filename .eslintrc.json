@@ -2,7 +2,8 @@
   "env": {
     "browser": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
   "extends": [
     "plugin:react/recommended",
@@ -19,7 +20,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "jsx-a11y"],
+  "plugins": ["react", "jest", "@typescript-eslint", "jsx-a11y"],
   "rules": {
     "@typescript-eslint/no-use-before-define": ["error"],
     "import/extensions": "off",
@@ -31,7 +32,11 @@
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     ],
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["jest/*", "**/*.test.tsx"] }
+    ]
   },
   "settings": {
     "import/parsers": {
