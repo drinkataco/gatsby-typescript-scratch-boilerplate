@@ -12,10 +12,9 @@ interface PageTemplateProps {
     };
     markdownRemark: {
       html: string;
-      excerpt: string;
       frontmatter: {
         title: string;
-        date: string;
+        description: string;
       };
     };
   };
@@ -23,12 +22,15 @@ interface PageTemplateProps {
 
 const PageTemplate: React.FC<PageTemplateProps> = ({
   data,
-}: PageTemplateProps) => (
-  <Layout>
-    {/* eslint-disable-next-line react/no-danger */}
-    <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-  </Layout>
-);
+}: PageTemplateProps) => {
+  const { description, title } = data.markdownRemark.frontmatter;
+  return (
+    <Layout description={description} title={title}>
+      {/* eslint-disable-next-line react/no-danger */}
+      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+    </Layout>
+  );
+};
 
 export default PageTemplate;
 
@@ -38,6 +40,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        description
       }
     }
   }

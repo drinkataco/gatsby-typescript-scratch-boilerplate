@@ -6,17 +6,24 @@ import { SiteMetadata, useSiteMetadata } from '../../hooks/useSiteMetadata';
 
 interface LayoutProps {
   children: React.ReactNode;
+  title?: string;
+  description?: string;
 }
 
-const IndexLayout: React.FC<LayoutProps> = ({ children }: LayoutProps) => {
+const IndexLayout: React.FC<LayoutProps> = ({
+  children,
+  description,
+  title,
+}: LayoutProps) => {
   const meta: SiteMetadata = useSiteMetadata();
+  const metaDescription = description || meta.description;
 
   return (
     <div className="layout">
       <Helmet>
         <html lang="en" />
-        <title>{meta.title}</title>
-        <meta name="description" content={meta.description} />
+        <title>{title || meta.title}</title>
+        { metaDescription && <meta name="description" content={metaDescription} /> }
       </Helmet>
       {children}
     </div>

@@ -8,7 +8,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   // through `createNodeField` so that the fields still exist and GraphQL won't
   // trip up. An empty string is still required in replacement to `null`.
   if (node.internal.type === 'MarkdownRemark') {
-    const { layout } = node.frontmatter;
+    const { layout, description } = node.frontmatter;
     const { relativePath } = getNode(node.parent);
 
     let { slug } = node.frontmatter;
@@ -22,6 +22,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       name: 'slug',
       value: slug || '',
+    });
+
+    createNodeField({
+      node,
+      name: 'description',
+      value: description || '',
     });
 
     // Used to determine a page layout.

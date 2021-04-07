@@ -1,5 +1,6 @@
 ---
 title: 'About'
+description: 'About Example Page'
 ---
 
 # About Page
