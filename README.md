@@ -16,7 +16,7 @@ A more opinionated starter for gatsby, whilst trying to keep the contents and de
 
 ## Adding Content
 
-Content can be added to [./src/content](./src/content) as a markdown file.
+Content can be added to [/content](./content) as a markdown file.
 
 Configuration you can add the th frontmatter:
 
