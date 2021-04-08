@@ -5,11 +5,6 @@ import Layout from '../components/Layout';
 
 interface PageTemplateProps {
   data: {
-    site: {
-      siteMetadata: {
-        title: string;
-      };
-    };
     markdownRemark: {
       html: string;
       frontmatter: {
