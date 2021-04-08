@@ -1,8 +1,7 @@
 module.exports = {
   rootDir: '../',
   transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest',
-    '^.+\\.js?$': '<rootDir>/jest/jest.preprocess.js',
+    '^.+\\.[jt]sx?$': '<rootDir>/jest/jest.preprocess.js',
   },
   testMatch: [
     '**/__tests__/**/*.+(ts|tsx|js)',

@@ -28,4 +28,4 @@ const useSiteMetadata = (): SiteMetadata => {
   return data.site.siteMetadata;
 };
 
-export { SiteMetadata, useSiteMetadata };
+export { SiteMetadataQueryResult, SiteMetadata, useSiteMetadata };
