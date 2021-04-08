@@ -1,6 +1,6 @@
 # Gatsby Advanced Bare-Bones Typescript Starter
 
-![Linting](https://github.com/drinkataco/gatsby-typescript-scratch-boilerplate/actions/workflows/lint.yml/badge.svg)
+![Lint and Tests](https://github.com/drinkataco/gatsby-typescript-scratch-boilerplate/actions/workflows/main.yml/badge.svg)
 
 
 A more opinionated starter for gatsby, whilst trying to keep the contents and dependencies still somewhat lightweight.
