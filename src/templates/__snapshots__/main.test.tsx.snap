@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PostTemplate renders correctly 1`] = `
+exports[`Main Content Template renders with correct data 1`] = `
 <div
   className="layout"
 >
