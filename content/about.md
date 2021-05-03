@@ -11,4 +11,4 @@ Hello! This is the example about page, written in markdown. With an image and al
 
 ![Records](/images/records.jpg)
 
-[Hey, do you want to see a video?](/video)
+[Hey, do you want to see a video?](/video/)
