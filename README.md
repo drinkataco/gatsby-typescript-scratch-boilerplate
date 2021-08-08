@@ -14,6 +14,12 @@ A more opinionated starter for gatsby, whilst trying to keep the contents and de
 - eslint (airbnb rules)
 - prettier
 
+## Running and Building
+
+To run in development mode run the command `npm run develop`.
+
+To build for production run `npm run build`.
+
 ## Adding Content
 
 Content can be added to [/content](./content) as a markdown file.
