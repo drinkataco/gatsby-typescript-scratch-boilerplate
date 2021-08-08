@@ -29,4 +29,6 @@ Configuration you can add the th frontmatter:
 - **title** - The page title
 - **layout** - what layout to use in [./src/layout](./src/layout). By default, uses *main*
 
+## Preview
 
+You can preview the gatsby starter at the following link: [gatsby-typescript-scratch-boilerplate.proj.shw.al](https://gatsby-typescript-scratch-boilerplate.proj.shw.al/)
