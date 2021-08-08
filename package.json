@@ -2,7 +2,7 @@
   "name": "gatsby-typescript-scratch-boilerplate",
   "private": true,
   "description": "A more advanced opinionated bare-bones typescript starter for Gatsby",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "license": "0BSD",
   "author": "J J Walwyn <me@joshwalwyn.com>",
   "scripts": {
