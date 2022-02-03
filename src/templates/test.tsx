@@ -4,7 +4,7 @@ import { useStaticQuery, StaticQuery } from 'gatsby';
 
 import MainTemplate from './main';
 
-describe('Main Content Template', () => {
+describe('main content template', () => {
   const props = {
     data: {
       markdownRemark: {
@@ -26,6 +26,8 @@ describe('Main Content Template', () => {
   });
 
   it('renders with correct data', () => {
+    expect.assertions(1);
+
     const tree = renderer.create(<MainTemplate data={props.data} />).toJSON();
     expect(tree).toMatchSnapshot();
   });

@@ -10,11 +10,7 @@ interface LayoutProps {
   description?: string;
 }
 
-const IndexLayout: React.FC<LayoutProps> = ({
-  children,
-  description,
-  title,
-}: LayoutProps) => {
+function IndexLayout({ children, description, title }: LayoutProps) {
   const meta: SiteMetadata = useSiteMetadata();
   const metaDescription = description || meta.description;
 
@@ -23,11 +19,13 @@ const IndexLayout: React.FC<LayoutProps> = ({
       <Helmet>
         <html lang="en" />
         <title>{title || meta.title}</title>
-        { metaDescription && <meta name="description" content={metaDescription} /> }
+        {metaDescription && (
+          <meta name="description" content={metaDescription} />
+        )}
       </Helmet>
       {children}
     </div>
   );
-};
+}
 
 export default IndexLayout;
