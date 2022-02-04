@@ -4,7 +4,7 @@ import { useStaticQuery, StaticQuery } from 'gatsby';
 
 import Layout from './index';
 
-describe('Layout', () => {
+describe('layout', () => {
   const props = {
     children: 'test',
     description: 'test',
@@ -19,6 +19,8 @@ describe('Layout', () => {
   });
 
   it('renders correctly', () => {
+    expect.assertions(1);
+
     const tree = renderer
       .create(
         <Layout>
