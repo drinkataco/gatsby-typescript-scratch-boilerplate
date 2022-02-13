@@ -2,7 +2,6 @@
 
 ![Lint and Tests](https://github.com/drinkataco/gatsby-typescript-scratch-boilerplate/actions/workflows/main.yml/badge.svg)
 
-
 A more opinionated starter for gatsby, whilst trying to keep the contents and dependencies still somewhat lightweight.
 
 ## Core Tech
@@ -31,4 +30,6 @@ Configuration you can add the th frontmatter:
 
 ## Preview
 
-You can preview the gatsby starter at the following link: [gatsby-typescript-scratch-boilerplate.proj.shw.al](https://gatsby-typescript-scratch-boilerplate.proj.shw.al/)
+You can preview the gatsby starter at the following link: [gatsby-typescript-scratch-boilerplate.proj.shw.al](https://gatsby-typescript-scratch-boilerplate.proj.shw.al/).
+
+This preview was generated using the [cdk-static-site](https://github.com/drinkataco/cdk-static-site) geneator. Check it out!
