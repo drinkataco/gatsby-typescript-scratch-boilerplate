@@ -6,7 +6,7 @@ A more opinionated starter for gatsby, whilst trying to keep the contents and de
 
 ## Core Tech
 
-- Gatsby 3
+- Gatsby 4
 - React
 - markdown
 - Typescript
