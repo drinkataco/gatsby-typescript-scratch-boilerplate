@@ -1,0 +1,12 @@
+{
+  "configurations": {
+    "Gatsby Chrome": {
+      "adapter": "chrome",
+      "configuration": {
+        "request": "launch",
+        "url": "http://localhost:8000/",
+        "webRoot": "${workspaceRoot}"
+      }
+    }
+  }
+}
