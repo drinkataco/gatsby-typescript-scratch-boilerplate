@@ -1,5 +1,5 @@
 @charset "UTF-8";
 
-@import "variables";
-@import "mixins";
-@import "base";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

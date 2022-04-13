@@ -2,8 +2,51 @@
 
 exports[`layout renders correctly 1`] = `
 <div
-  className="layout"
+  className="w-4/5 m-auto font-sans pb-3"
 >
+  <header
+    className="my-5 border-b-2"
+  >
+    <h1
+      className="font-bold text-2xl mb-3"
+    >
+      Gatsby Starter Template
+    </h1>
+    <nav
+      className="mb-5"
+    >
+      <span>
+        <a
+          className="hover:underline text-slate-800 hover:text-slate-500"
+          href="/"
+        >
+          Home
+        </a>
+        <span>
+           | 
+        </span>
+      </span>
+      <span>
+        <a
+          className="hover:underline text-slate-800 hover:text-slate-500"
+          href="/about"
+        >
+          About
+        </a>
+        <span>
+           | 
+        </span>
+      </span>
+      <span>
+        <a
+          className="hover:underline text-slate-800 hover:text-slate-500"
+          href="/video"
+        >
+          Video
+        </a>
+      </span>
+    </nav>
+  </header>
   <h1>
     Test
   </h1>

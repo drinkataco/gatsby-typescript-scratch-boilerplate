@@ -23,16 +23,20 @@ function Navigation() {
   ];
 
   return (
-    <div className="navigation">
+    <nav className="mb-5">
       {routes.map((route: Route, key: number) => (
-        <>
-          <Link key={route.location} to={route.location}>
+        <span key={route.location}>
+          <Link
+            to={route.location}
+            activeClassName="font-bold hover:text-black"
+            className="hover:underline text-slate-800 hover:text-slate-500"
+          >
             {route.name}
           </Link>
           {routes.length !== (key + 1) && <span> | </span>}
-        </>
+        </span>
       ))}
-    </div>
+    </nav>
   );
 }
 

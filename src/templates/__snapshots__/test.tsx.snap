@@ -2,14 +2,60 @@
 
 exports[`main content template renders with correct data 1`] = `
 <div
-  className="layout"
+  className="w-4/5 m-auto font-sans pb-3"
 >
-  <div
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "<p>test</p>",
+  <header
+    className="my-5 border-b-2"
+  >
+    <h1
+      className="font-bold text-2xl mb-3"
+    >
+      Gatsby Starter Template
+       - Test Markdown Page
+    </h1>
+    <nav
+      className="mb-5"
+    >
+      <span>
+        <a
+          className="hover:underline text-slate-800 hover:text-slate-500"
+          href="/"
+        >
+          Home
+        </a>
+        <span>
+           | 
+        </span>
+      </span>
+      <span>
+        <a
+          className="hover:underline text-slate-800 hover:text-slate-500"
+          href="/about"
+        >
+          About
+        </a>
+        <span>
+           | 
+        </span>
+      </span>
+      <span>
+        <a
+          className="hover:underline text-slate-800 hover:text-slate-500"
+          href="/video"
+        >
+          Video
+        </a>
+      </span>
+    </nav>
+  </header>
+  <article>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>test</p>",
+        }
       }
-    }
-  />
+    />
+  </article>
 </div>
 `;

@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
 
-import './styles.scss';
 import Navigation from '../Navigation';
 import { SiteMetadata, useSiteMetadata } from '../../hooks/useSiteMetadata';
 
@@ -12,7 +11,7 @@ interface LayoutProps {
 }
 
 function MainLayout({ children, description, title }: LayoutProps) {
-  const siteTitle = 'Gatsby Template';
+  const siteTitle = 'Gatsby Starter Template';
   const meta: SiteMetadata = useSiteMetadata();
   const metaDescription = description || meta.description;
 
@@ -25,14 +24,14 @@ function MainLayout({ children, description, title }: LayoutProps) {
           <meta name="description" content={metaDescription} />
         )}
       </Helmet>
-      <div className="layout">
-        <header>
-          <h1>
+      <div className="w-4/5 m-auto font-sans pb-3">
+        <header className="my-5 border-b-2">
+          <h1 className="font-bold text-2xl mb-3">
             { siteTitle }
             { title && ` - ${title}` }
           </h1>
+          <Navigation />
         </header>
-        <Navigation />
         {children}
       </div>
     </>

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/MainLayout';
+import './main.scss';
 
 interface PageTemplateProps {
   data: {
@@ -19,8 +20,10 @@ function PageTemplate({ data }: PageTemplateProps) {
   const { description, title } = data.markdownRemark.frontmatter;
   return (
     <Layout description={description} title={title}>
-      {/* eslint-disable-next-line react/no-danger */}
-      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+      <article>
+        {/* eslint-disable-next-line react/no-danger */}
+        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+      </article>
     </Layout>
   );
 }

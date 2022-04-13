@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 module.exports = {
   siteMetadata: {
     title: 'gatsby-typescript-scratch-boilerplate',
@@ -50,9 +51,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        /* eslint-disable global-require */
-        implementation: require('sass'),
-        useResolveUrlLoader: true,
+        postCssPlugins: [
+          require('tailwindcss'),
+          require('./tailwind.config.js'), // Optional: Load custom Tailwind CSS configuration
+        ],
       },
     },
   ],
