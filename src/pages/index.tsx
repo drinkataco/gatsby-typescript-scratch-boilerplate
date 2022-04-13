@@ -1,14 +1,13 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 
-import Layout from '../components/Layout';
+import Layout from '../components/MainLayout';
 
 function IndexPage(): React.ReactNode {
   return (
     <Layout>
-      <h1>Index Page</h1>
+      <h1>Homepage</h1>
       <p>Welcome to your new Gatsby site.</p>
-      <Link to="/about/">About</Link>
+      <p>This is a template for you to build your gatsby powered site with</p>
     </Layout>
   );
 }

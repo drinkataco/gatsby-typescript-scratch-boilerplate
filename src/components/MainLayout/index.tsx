@@ -2,30 +2,41 @@ import * as React from 'react';
 import Helmet from 'react-helmet';
 
 import './styles.scss';
+import Navigation from '../Navigation';
 import { SiteMetadata, useSiteMetadata } from '../../hooks/useSiteMetadata';
 
 interface LayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode | React.ReactNode[];
   title?: string;
   description?: string;
 }
 
-function IndexLayout({ children, description, title }: LayoutProps) {
+function MainLayout({ children, description, title }: LayoutProps) {
+  const siteTitle = 'Gatsby Template';
   const meta: SiteMetadata = useSiteMetadata();
   const metaDescription = description || meta.description;
 
   return (
-    <div className="layout">
+    <>
       <Helmet>
         <html lang="en" />
-        <title>{title || meta.title}</title>
+        <title>{siteTitle && (title || meta.title)}</title>
         {metaDescription && (
           <meta name="description" content={metaDescription} />
         )}
       </Helmet>
-      {children}
-    </div>
+      <div className="layout">
+        <header>
+          <h1>
+            { siteTitle }
+            { title && ` - ${title}` }
+          </h1>
+        </header>
+        <Navigation />
+        {children}
+      </div>
+    </>
   );
 }
 
-export default IndexLayout;
+export default MainLayout;
