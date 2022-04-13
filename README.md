@@ -11,7 +11,7 @@ A more opinionated starter for gatsby, whilst trying to keep the contents and de
 - markdown
 - Typescript
 - eslint (airbnb rules)
-- prettier
+- tailwind
 
 ## Running and Building
 
@@ -23,9 +23,10 @@ To build for production run `npm run build`.
 
 Content can be added to [/content](./content) as a markdown file.
 
-Configuration you can add the th frontmatter:
+Configuration you can add the the frontmatter:
 
 - **title** - The page title
+- **description** - The page description
 - **layout** - what layout to use in [./src/layout](./src/layout). By default, uses *main*
 
 ## Preview

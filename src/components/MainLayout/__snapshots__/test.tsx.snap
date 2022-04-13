@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`main content template renders with correct data 1`] = `
+exports[`layout renders correctly 1`] = `
 <div
   className="w-4/5 m-auto font-sans pb-3"
 >
@@ -11,7 +11,6 @@ exports[`main content template renders with correct data 1`] = `
       className="font-bold text-2xl mb-3"
     >
       Gatsby Starter Template
-       - Test Markdown Page
     </h1>
     <nav
       className="mb-5"
@@ -48,14 +47,8 @@ exports[`main content template renders with correct data 1`] = `
       </span>
     </nav>
   </header>
-  <article>
-    <div
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<p>test</p>",
-        }
-      }
-    />
-  </article>
+  <h1>
+    Test
+  </h1>
 </div>
 `;
