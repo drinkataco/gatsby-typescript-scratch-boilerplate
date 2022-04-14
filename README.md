@@ -27,7 +27,6 @@ Configuration you can add the the frontmatter:
 
 - **title** - The page title
 - **description** - The page description
-- **layout** - what layout to use in [./src/layout](./src/layout). By default, uses *main*
 
 ## Preview
 

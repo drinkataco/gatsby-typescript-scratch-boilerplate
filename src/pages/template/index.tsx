@@ -1,8 +1,7 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
 
-import Layout from '../components/MainLayout';
-import './main.scss';
+import Layout from '../../components/Layout';
 
 interface PageTemplateProps {
   data: {

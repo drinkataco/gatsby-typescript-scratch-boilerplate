@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { useStaticQuery, StaticQuery } from 'gatsby';
 
-import MainTemplate from './main';
+import MainTemplate from '.';
 
 describe('main content template', () => {
   const props = {

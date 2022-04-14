@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Layout from '../components/MainLayout';
+import Layout from '../components/Layout';
 
 function NotFound(): React.ReactNode {
   return (

@@ -4,6 +4,8 @@ import Helmet from 'react-helmet';
 import Navigation from '../Navigation';
 import { SiteMetadata, useSiteMetadata } from '../../hooks/useSiteMetadata';
 
+import './style.scss';
+
 interface LayoutProps {
   children: React.ReactNode | React.ReactNode[];
   title?: string;
@@ -32,7 +34,9 @@ function MainLayout({ children, description, title }: LayoutProps) {
           </h1>
           <Navigation />
         </header>
-        {children}
+        <main>
+          {children}
+        </main>
       </div>
     </>
   );

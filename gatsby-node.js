@@ -70,10 +70,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    const { slug, layout } = node.fields;
+    const { slug } = node.fields;
     createPage({
       path: slug,
-      component: path.resolve(`./src/templates/${layout || 'main'}.tsx`),
+      component: path.resolve('./src/pages/template/index.tsx'),
       context: {
         // additional data can be passed via context
         slug,
