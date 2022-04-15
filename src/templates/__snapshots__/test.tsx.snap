@@ -11,7 +11,6 @@ exports[`main content template renders with correct data 1`] = `
       className="font-bold text-2xl mb-3"
     >
       Gatsby Starter Template
-       - Test Markdown Page
     </h1>
     <nav
       className="mb-5"
@@ -30,7 +29,7 @@ exports[`main content template renders with correct data 1`] = `
       <span>
         <a
           className="hover:underline text-slate-800 hover:text-slate-500"
-          href="/about"
+          href="/about/"
         >
           About
         </a>
@@ -41,21 +40,23 @@ exports[`main content template renders with correct data 1`] = `
       <span>
         <a
           className="hover:underline text-slate-800 hover:text-slate-500"
-          href="/video"
+          href="/video/"
         >
           Video
         </a>
       </span>
     </nav>
   </header>
-  <article>
-    <div
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<p>test</p>",
+  <main>
+    <article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>test</p>",
+          }
         }
-      }
-    />
-  </article>
+      />
+    </article>
+  </main>
 </div>
 `;

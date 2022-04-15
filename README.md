@@ -28,6 +28,15 @@ Configuration you can add the the frontmatter:
 - **title** - The page title
 - **description** - The page description
 
+## Default Component List
+
+The template ships with the following main component directories:
+
+- [/src/components/]('./src/components') - this is where page components are stored. Such as [Layout]('./src/components/Layout'), [Header]('./src/components/Header'), and [Navigation]('./src/components/Navigation')
+- [/src/pages/]('./src/pages') - this is where page definitions are held. For example, you can include static pages (such as 404, the index)
+- [src/templates](./src/pages/templates') templates for our dynamic content – our markdown files
+
+
 ## Preview
 
 You can preview the gatsby starter at the following link: [gatsby-typescript-scratch-boilerplate.proj.shw.al](https://gatsby-typescript-scratch-boilerplate.proj.shw.al/).

@@ -27,7 +27,7 @@ function MainLayout({ children, description, title }: LayoutProps) {
         )}
       </Helmet>
       <div className="w-4/5 m-auto font-sans pb-3">
-        <Header siteTitle={ siteTitle } />
+        <Header siteTitle={siteTitle} />
         <main>
           {children}
         </main>

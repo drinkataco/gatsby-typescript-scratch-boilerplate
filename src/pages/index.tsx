@@ -7,7 +7,11 @@ function IndexPage(): React.ReactNode {
     <Layout>
       <h1>Homepage</h1>
       <p>Welcome to your new Gatsby site.</p>
-      <p>This is a template for you to build your gatsby powered site with</p>
+      <p>
+        This is a template for you to build your new site with.
+        This index page is static. But click around the navigation to
+        see content rendered from Markdown!
+      </p>
     </Layout>
   );
 }

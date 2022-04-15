@@ -29,7 +29,7 @@ exports[`layout renders correctly 1`] = `
       <span>
         <a
           className="hover:underline text-slate-800 hover:text-slate-500"
-          href="/about"
+          href="/about/"
         >
           About
         </a>
@@ -40,15 +40,17 @@ exports[`layout renders correctly 1`] = `
       <span>
         <a
           className="hover:underline text-slate-800 hover:text-slate-500"
-          href="/video"
+          href="/video/"
         >
           Video
         </a>
       </span>
     </nav>
   </header>
-  <h1>
-    Test
-  </h1>
+  <main>
+    <h1>
+      Test
+    </h1>
+  </main>
 </div>
 `;

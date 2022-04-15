@@ -73,7 +73,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const { slug } = node.fields;
     createPage({
       path: slug,
-      component: path.resolve('./src/pages/template/index.tsx'),
+      component: path.resolve('./src/templates/main.tsx'),
       context: {
         // additional data can be passed via context
         slug,

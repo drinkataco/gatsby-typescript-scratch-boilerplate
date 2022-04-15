@@ -5,7 +5,9 @@ description: 'About Example Page'
 
 # About Page
 
-*Lorem ipsum* dolor sit amet, consectetur adipiscing elit. Eaedem enim utilitates poterunt eas labefactare atque pervertere. Tanta vis admonitionis inest in locis; [Duo Reges](https://jo.shw.al/): constructio interrete. Ea, quae dialectici nunc tradunt et docent, nonne ab illis instituta sunt aut inventa sunt?
+*This is a page constructed from Markdown to show standard html elements being styled.*
+
+**Lorem ipsum** dolor sit amet, consectetur adipiscing elit. Eaedem enim utilitates poterunt eas labefactare atque pervertere. Tanta vis admonitionis inest in locis; [Duo Reges](https://jo.shw.al/): constructio interrete. Ea, quae dialectici nunc tradunt et docent, nonne ab illis instituta sunt aut inventa sunt?
 
 Non quaeritur autem quid naturae **tuae consentaneum sit**, sed quid disciplinae. Sic enim maiores nostri labores non fugiendos tristissimo tamen verbo aerumnas etiam in deo nominaverunt.
 
