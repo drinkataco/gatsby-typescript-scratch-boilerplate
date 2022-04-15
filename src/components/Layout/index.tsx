@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
 
-import Navigation from '../Navigation';
+import Header from '../Header';
 import { SiteMetadata, useSiteMetadata } from '../../hooks/useSiteMetadata';
 
 import './style.scss';
@@ -27,13 +27,7 @@ function MainLayout({ children, description, title }: LayoutProps) {
         )}
       </Helmet>
       <div className="w-4/5 m-auto font-sans pb-3">
-        <header className="my-5 border-b-2">
-          <h1 className="font-bold text-2xl mb-3">
-            { siteTitle }
-            { title && ` - ${title}` }
-          </h1>
-          <Navigation />
-        </header>
+        <Header siteTitle={ siteTitle } />
         <main>
           {children}
         </main>
