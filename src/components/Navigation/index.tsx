@@ -13,11 +13,11 @@ function Navigation() {
       name: 'Home',
     },
     {
-      location: '/about',
+      location: '/about/',
       name: 'About',
     },
     {
-      location: '/video',
+      location: '/video/',
       name: 'Video',
     },
   ];
