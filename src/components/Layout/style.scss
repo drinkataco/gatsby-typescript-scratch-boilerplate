@@ -6,11 +6,15 @@ main {
   }
 
   h2 {
-    @apply text-xl;
+    @apply text-xl mb-2;
   }
 
   h3 {
-    @apply text-lg;
+    @apply text-lg mb-2;
+  }
+
+  h4 {
+    @apply text-base mb-2;
   }
 
   p {
