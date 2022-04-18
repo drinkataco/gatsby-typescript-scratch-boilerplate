@@ -24,6 +24,7 @@ module.exports = {
     __BASE_PATH__: '',
   },
   collectCoverage: true,
+  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
   coverageThreshold: {
     global: {
       branches: 100,
