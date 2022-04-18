@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`not found page renders 404 page 1`] = `
+<MainLayout>
+  <h1
+    className="font-bold mb-6"
+  >
+    404 Not Found
+  </h1>
+  <h3>
+    Why don't you try...
+  </h3>
+  <ul>
+    <li>
+      <mockConstructor
+        to="this-page"
+      >
+        A Page #1
+      </mockConstructor>
+    </li>
+    <li>
+      <mockConstructor
+        to="this-page"
+      >
+        A Page #2
+      </mockConstructor>
+    </li>
+  </ul>
+</MainLayout>
+`;
