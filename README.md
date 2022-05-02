@@ -17,7 +17,9 @@ A more opinionated starter for gatsby, whilst trying to keep the contents and de
 
 To run in development mode run the command `npm run develop`.
 
-To build for production run `npm run build`.
+To build static files for production run `npm run build`.
+
+Alternatively, you can use the Dockerfile provided to build straight to an nginx environment. A command like `docker run -d -p 8111:80 $(docker build -q .)` should help you.
 
 ## Adding Content
 
@@ -34,11 +36,11 @@ The template ships with the following main component directories:
 
 - [/src/components/]('./src/components') - this is where page components are stored. Such as [Layout]('./src/components/Layout'), [Header]('./src/components/Header'), and [Navigation]('./src/components/Navigation')
 - [/src/pages/]('./src/pages') - this is where page definitions are held. For example, you can include static pages (such as 404, the index)
-- [src/templates](./src/pages/templates') templates for our dynamic content – our markdown files
+- [/src/templates](./src/templates') templates for our dynamic content – our markdown files
 
 
 ## Preview
 
 You can preview the gatsby starter at the following link: [gatsby-typescript-scratch-boilerplate.proj.shw.al](https://gatsby-typescript-scratch-boilerplate.proj.shw.al/).
 
-This preview was generated using the [cdk-static-site](https://github.com/drinkataco/cdk-static-site) geneator. Check it out!
+This preview was generated using the [cdk-static-site](https://github.com/drinkataco/cdk-static-site) tool. Check it out!
