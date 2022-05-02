@@ -1,8 +1,7 @@
-FROM node:alpine as builder
-
-RUN apk update && apk add --no-cache make git python autoconf g++ libc6-compat libjpeg-turbo-dev libpng-dev nasm libtool automake
+FROM node:16-alpine as builder
 
 WORKDIR /usr/src/app
+
 COPY . .
 
 RUN npm ci

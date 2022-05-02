@@ -1,0 +1,8 @@
+**
+
+!content/
+!static/
+!src/
+!gatsby*
+!package*
+!tailwind.config.js
