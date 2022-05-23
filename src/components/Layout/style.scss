@@ -37,7 +37,7 @@ main {
     @apply border-l-2 pl-4 text-slate-600 border-slate-400 my-5 block;
   }
 
-  iframe {
+  div.gatsby-resp-iframe-wrapper {
     @apply my-3;
   }
 }
